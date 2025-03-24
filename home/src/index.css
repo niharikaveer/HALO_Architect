@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  /* Hide cursor when custom cursor is visible */
+  @media (min-width: 768px) {
+    * {
+      cursor: none !important;
+    }
+  }
+
+  /* Ensure videos are visible on mobile */
+  video {
+    @apply w-full h-full object-cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    max-width: none;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
