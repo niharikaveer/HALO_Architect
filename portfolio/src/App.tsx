@@ -72,16 +72,46 @@ function App() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          {['Projects', 'About', 'Services', 'Team', 'Contact'].map((item, idx) => (
-            <a
-              key={idx}
-              href="#"
-              className="relative group transition-colors duration-300"
-            >
-              <span className="hover:text-gray-300 transition-colors">{item}</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          ))}
+        <a
+          href="../home/src/main.tsx"
+          className="relative group transition-colors duration-300"
+        >
+          <span className="hover:text-gray-300 transition-colors">Home</span>
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a
+          href="#"
+          className="relative group transition-colors duration-300"
+        >
+          <span className="hover:text-gray-300 transition-colors">Projects</span>
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a
+          href="#services"
+          className="relative group transition-colors duration-300"
+        >
+          <span className="hover:text-gray-300 transition-colors">Services</span>
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a
+          href="#team"
+          className="relative group transition-colors duration-300"
+        >
+          <span className="hover:text-gray-300 transition-colors">Team</span>
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a
+          href="#contact"
+          className="relative group transition-colors duration-300"
+        >
+          <span className="hover:text-gray-300 transition-colors">Contact</span>
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
         </div>
 
         {/* Mobile Menu Button */}
